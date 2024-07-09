@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/locales/en.json')
+fetch('https://serverjson-g1d6.onrender.com/locales/en.json')
   .then(res => res.json())
   .then(enTranslations => {
     const savedLanguage = localStorage.getItem('language') || 'en';
@@ -33,7 +33,7 @@ fetch('http://localhost:3000/locales/en.json')
   });
 
 function changeLanguage(lng) {
-  fetch(`http://localhost:3000/locales/${lng}.json`)
+  fetch(`https://serverjson-g1d6.onrender.com/locales/${lng}.json`)
     .then(res => res.json())
     .then(translations => {
       i18next.addResourceBundle(lng, 'translation', translations);
