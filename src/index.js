@@ -1,4 +1,4 @@
-fetch('en.json')
+fetch('http://localhost:3000/locales/en.json')
   .then(res => res.json())
   .then(enTranslations => {
     const savedLanguage = localStorage.getItem('language') || 'en';
@@ -33,7 +33,7 @@ fetch('en.json')
   });
 
 function changeLanguage(lng) {
-  fetch(`${lng}.json`)
+  fetch(`http://localhost:3000/locales/${lng}.json`)
     .then(res => res.json())
     .then(translations => {
       i18next.addResourceBundle(lng, 'translation', translations);
