@@ -1,41 +1,52 @@
 <section class="swiper-home-section">
-  <div class="container swiper-home-div">
+  <div class="swiper-home-div">
     <h2 class="swiper-home-title" id="swiper-home-title"></h2>
 
     <swiper-container class="mySwiper" init="false">
       <swiper-slide class="slide-1"
-        ><p class="swiper-text" id="swiper-home-slide-one"></p>
+        ><p class="swiper-text a" id="swiper-home-slide-one"></p>
         <img
           src="./img/swiper-home/slide1@2x.png"
           alt="company logo"
-          class="swiper-h-img"
+          class="swiper-h-img1"
       /></swiper-slide>
       <swiper-slide class="slide-2"
-        ><p class="swiper-text" id="swiper-home-slide-two"></p>
-        <img
-          src="./img/swiper-home/slide2@2x.png"
-          alt="company logo"
-          class="swiper-h-img"
-      /></swiper-slide>
+        ><p class="swiper-text b" id="swiper-home-slide-two"></p>
+        <picture>
+          <source
+            srcset="./img/swiper-home/slide3_768.png"
+            media="(min-width: 768px)" />
+          <source
+            srcset="./img/swiper-home/slide2@2x.png"
+            media="(min-width: 375px)" />
+          <img
+            src="./img/swiper-home/slide2@2x.png"
+            alt="company logo"
+            class="swiper-h-img2" /></picture
+      ></swiper-slide>
       <swiper-slide class="slide-3"
-        ><p class="swiper-text" id="swiper-home-slide-three"></p>
+        ><p class="swiper-text c" id="swiper-home-slide-three"></p>
         <img
           src="./img/swiper-home/slide3@2x.png"
           alt="company logo"
-          class="swiper-h-img"
+          class="swiper-h-img3"
       /></swiper-slide>
       <swiper-slide class="slide-4"
-        ><p class="swiper-text" id="swiper-home-slide-four"></p>
+        ><p class="swiper-text d" id="swiper-home-slide-four"></p>
         <img
           src="./img/swiper-home/slide4@2x.png"
           alt="company logo"
-          class="swiper-h-img"
+          class="swiper-h-img4"
       /></swiper-slide>
     </swiper-container>
 
     <div class="nav-btn-menu">
-      <div class="swiper-button-prev"><img src="./img/swiper-home/btn-left.png" alt="button"></div>
-    <div class="swiper-button-next"><img src="./img/swiper-home/btn-right.png" alt="button"></div>
+      <div class="swiper-button-prev">
+        <img src="./img/swiper-home/btn-left.png" alt="button" />
+      </div>
+      <div class="swiper-button-next">
+        <img src="./img/swiper-home/btn-right.png" alt="button" />
+      </div>
     </div>
   </div>
 </section>
@@ -72,12 +83,11 @@
       renderBullet: function (index, className) {
         return `<span class="${className}"> </span>`;
       },
-
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   };
 
   Object.assign(swiperEl, params);

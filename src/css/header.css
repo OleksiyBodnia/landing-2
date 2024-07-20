@@ -1,6 +1,6 @@
 @media screen and (min-width: 375px) {
   .header-nav-desk,
-  .header-desk-gs-btn{
+  .header-desk-gs-btn {
     display: none;
   }
   .head-logo {
@@ -13,8 +13,8 @@
   }
   .burger {
     stroke: #5c5c5c;
-    width: 32px;
-    height: 24px;
+    width: 24px;
+    height: 18px;
     flex-shrink: 0;
   }
   .header-div {
@@ -23,8 +23,6 @@
     justify-content: space-between;
   }
   .close {
-    width: 25px;
-    height: 25px;
     flex-shrink: 0;
     stroke: #5c5c5c;
   }
@@ -90,6 +88,7 @@
   .header-tablet-btn {
     padding: 14px 50px 14px 50px;
     width: 188px;
+    height: 48px;
     border-radius: 16px;
     background: var(--Buttons-Primary);
     border: none;
@@ -106,8 +105,11 @@
   .header-tablet-btn:focus {
     background: rgba(255, 71, 77, 0.8);
   }
-  .social-tablet-icon-header {
+  .social-tablet-icon-header1 {
     height: 32px;
+  }
+  .social-tablet-icon-header2 {
+    height: 40px;
   }
   .header-top {
     margin-bottom: 0;
@@ -128,11 +130,14 @@
   .nav-link {
     font-size: 20px;
   }
+  .navigation-menu {
+    gap: 48px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .header-nav-desk,
-  .header-desk-gs-btn{
+  .header-desk-gs-btn {
     display: block;
   }
   .mobile-menu,
@@ -174,9 +179,32 @@
     font-weight: 700;
     line-height: normal;
     transition: background 0.3s ease-in-out;
+    width: 129px;
+    height: 40px;
   }
   .header-desk-gs-btn:hover,
   .header-desk-gs-btn:focus {
-    background: #E0E0E1;
+    background: #e0e0e1;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .head-logo {
+    height: 44px;
+    width: 132px;
+  }
+  .nav-header-link-desk {
+    font-size: 18px;
+  }
+  .header-desk-gs-btn {
+    width: 156px;
+    height: 48px;
+    color: #212121;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 16.8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
 }

@@ -5,6 +5,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: url('../img/how-it-works-home/bg-images/dots.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-position: -94px 274px;
   }
   .hiw-title {
     color: var(--Text-Main);
@@ -37,6 +41,11 @@
     justify-content: center;
     gap: 8px;
     margin-bottom: 48px;
+    transition: background 0.3s ease-in-out;
+  }
+  .hiw-play-btn:hover,
+  .hiw-play-btn:focus {
+    background: #e0e0e1;
   }
   .paly-btn-text {
     color: var(--Text-Main);
@@ -91,6 +100,7 @@
     line-height: normal;
     text-align: left;
     width: 356px;
+    margin-bottom: 17px;
   }
   .hiw-text {
     font-size: 16px;
@@ -122,6 +132,7 @@
     font-weight: 600;
     line-height: normal;
     width: 398px;
+    margin-bottom: 16px;
   }
   .hiw-text {
     font-size: 16px;
@@ -175,5 +186,21 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+  }
+  .hiw-text {
+    width: 100%;
+  }
+  .hiw-play-btn {
+    width: 220px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .paly-btn-text{
+    font-size: 18px;
   }
 }

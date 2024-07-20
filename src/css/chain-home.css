@@ -6,12 +6,17 @@
     flex-direction: column;
     gap: 32px;
     padding-bottom: 148px;
+    padding-top: 60px;
+    background-image: url(/img/smarter/rect.png);
+    background-position: 0 -404px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .chain-home-title {
     color: var(--Text-Main);
     text-align: center;
     font-family: Gilroy;
-    font-size: 32px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -19,6 +24,7 @@
 }
 @media screen and (min-width: 768px) {
   .chin-home-sid {
+    background-image: none;
     gap: 32px;
     padding-bottom: 196px;
   }
@@ -32,6 +38,9 @@
   }
   .chain-home-title {
     font-size: 32px;
+  }
+  .chin-home-sid{
+    gap: 33px;
   }
 }
 @media screen and (min-width: 1280px) {

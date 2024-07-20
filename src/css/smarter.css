@@ -40,8 +40,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 11px 24px 11px 24px;
-    border: 2px solid black;
+    padding: 11px 24px 12px 24px;
+    border: 1px solid #212121;
   }
   .smrt-btn-two,
   .smrt-btn-three {
@@ -101,6 +101,9 @@
     justify-content: center;
     flex-direction: column;
   }
+  .rect {
+    padding-top: 3px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -130,6 +133,20 @@
     font-weight: 400;
     line-height: 1.43; /* 143.75% */
   }
+  .smrt-btn-one,
+  .smrt-btn-two,
+  .smrt-btn-three {
+    padding: 11px 34px 12px 34px;
+  }
+  .change-list {
+    gap: 8px;
+  }
+  .more-features {
+    margin-bottom: 40px;
+  }
+  .smrt-btn-div {
+    gap: 16px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -147,6 +164,13 @@
   .change-list {
     width: 389px;
   }
+  .change-item-text {
+    width: 398px;
+  }
+  .frst-smrt-div-title {
+    font-size: 36px;
+    width: 438px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .smarter-div {
@@ -158,29 +182,50 @@
     font-weight: 600;
     line-height: normal;
   }
-
 }
 
 @media screen and (min-width: 1440px) {
-  .smarter-div{
+  .smarter-div {
     padding-bottom: 329px;
   }
   .change-list {
     width: 500px;
   }
+  .change-item-text {
+    width: 489px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
-  .smarter-div{
+  .smarter-div {
     padding-bottom: 314px;
   }
-  .frst-smrt-div-title{
+  .frst-smrt-div-title {
     font-size: 44px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
   }
-  .frst-smrt-div-title{
+  .frst-smrt-div-title {
     width: 600px;
+  }
+  .change-list {
+    width: 100%;
+  }
+  .change-item-text {
+    font-size: 18px;
+    width: 100%;
+  }
+  .frst-smrt-div {
+    width: 574px;
+  }
+  .more-features {
+    width: 210px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
   }
 }

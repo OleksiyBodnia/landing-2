@@ -1,96 +1,290 @@
 <header class="header-sec">
   <div class="container header-div">
-
-    <div style="display: flex; gap: 24px; position: relative;">
+    <div
+      style="
+        display: flex;
+        gap: 24px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+      "
+    >
       <img src="./img/header/logo@2x.png" alt="logotype" class="head-logo" />
-      <select class="language-selector" onchange="changeLanguage(value)">
-        <option value="en" selected>EN</option>
-        <option value="uk">UK</option>
-      </select>
+      <div class="language-switcher">
+        <div class="selected-language">
+          EN
+          <svg
+            class="arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="6"
+            viewBox="0 0 10 6"
+            fill="none"
+          >
+            <path
+              d="M4.99998 6C4.82076 6 4.64156 5.92797 4.50493 5.78422L0.205142 1.25832C-0.0683806 0.970413 -0.0683806 0.503627 0.205142 0.21584C0.478554 -0.0719468 0.921935 -0.0719468 1.19548 0.21584L4.99998 4.22061L8.80451 0.21598C9.07803 -0.0718069 9.52137 -0.0718069 9.79476 0.21598C10.0684 0.503767 10.0684 0.970553 9.79476 1.25846L5.49504 5.78436C5.35834 5.92814 5.17914 6 4.99998 6Z"
+              fill="#212121"
+            />
+          </svg>
+        </div>
+        <div class="language-options">
+          <div class="flag" data-lang="EN">
+            <img src="./img/header/flag1.png" alt="flag" />
+          </div>
+          <div class="separator"></div>
+          <div class="flag" data-lang="UA">
+            <img src="./img/header/flag2.png" alt="flag" />
+          </div>
+          <div class="separator"></div>
+          <div class="flag" data-lang="FR">
+            <img src="./img/header/flag3.png" alt="flag" />
+          </div>
+          <div class="separator"></div>
+          <div class="flag" data-lang="ES">
+            <img src="./img/header/flag4.png" alt="flag" />
+          </div>
+        </div>
+      </div>
     </div>
-      <svg class="burger">
-        <use href="./icons/s.svg#icon-menu"></use>
-      </svg>
+    <svg
+      class="burger"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="18"
+      viewBox="0 0 24 18"
+      fill="none"
+    >
+      <rect width="24" height="2.84211" rx="1.42105" fill="#5C5C5C" />
+      <rect
+        y="7.5791"
+        width="24"
+        height="2.84211"
+        rx="1.42105"
+        fill="#5C5C5C"
+      />
+      <rect
+        y="15.158"
+        width="24"
+        height="2.84211"
+        rx="1.42105"
+        fill="#5C5C5C"
+      />
+    </svg>
 
+    <nav class="header-nav-desk">
+      <ul class="list nav-header-list-desk">
+        <li class="nav-header-item-desk">
+          <a
+            href=""
+            class="nav-header-link-desk"
+            id="nav-home-header"
+            style="color: var(--Text-Primary)"
+          ></a>
+        </li>
+        <li class="nav-header-item-desk">
+          <a
+            href="./features.html"
+            class="nav-header-link-desk"
+            id="nav-features-header"
+          ></a>
+        </li>
+        <li class="nav-header-item-desk">
+          <a
+            href="./company.html"
+            class="nav-header-link-desk"
+            id="nav-company-header"
+          ></a>
+        </li>
+      </ul>
+    </nav>
 
-      <nav class="header-nav-desk">
-        <ul class="list nav-header-list-desk">
-          <li class="nav-header-item-desk"><a href="" class="nav-header-link-desk" id="nav-home-header" style="color: var(--Text-Primary);"></a></li>
-          <li class="nav-header-item-desk"><a href="./features.html" class="nav-header-link-desk" id="nav-features-header"></a></li>
-          <li class="nav-header-item-desk"><a href="./company.html" class="nav-header-link-desk" id="nav-company-header"></a></li>
-        </ul>
-      </nav>
-
-      <button class="header-desk-gs-btn" id="get-started" onclick="scrollToSection()"></button>
+    <button
+      class="header-desk-gs-btn"
+      id="get-started"
+      onclick="scrollToSection()"
+    ></button>
   </div>
 </header>
 <div class="mobile-menu">
   <div class="header-top">
-    <img src="./img/header/logo@2x.png" alt="logotype" class="head-logo" />
-    <svg class="close">
-      <use href="./icons/s.svg#icon-close"></use>
+    <div
+      style="
+        display: flex;
+        gap: 24px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <img src="./img/header/logo@2x.png" alt="logotype" class="head-logo" />
+    </div>
+    <svg
+      class="close"
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+    >
+      <path
+        d="M11.8323 10.0001L19.6199 2.21215C20.1267 1.70557 20.1267 0.88651 19.6199 0.379933C19.1133 -0.126644 18.2943 -0.126644 17.7877 0.379933L9.99989 8.16793L2.21228 0.379933C1.70548 -0.126644 0.88667 -0.126644 0.380103 0.379933C-0.126701 0.88651 -0.126701 1.70557 0.380103 2.21215L8.16771 10.0001L0.380103 17.7881C-0.126701 18.2947 -0.126701 19.1138 0.380103 19.6204C0.632556 19.8731 0.964494 20 1.29619 20C1.62789 20 1.95959 19.8731 2.21228 19.6204L9.99989 11.8324L17.7877 19.6204C18.0404 19.8731 18.3721 20 18.7038 20C19.0355 20 19.3672 19.8731 19.6199 19.6204C20.1267 19.1138 20.1267 18.2947 19.6199 17.7881L11.8323 10.0001Z"
+        fill="#5C5C5C"
+      />
     </svg>
   </div>
   <nav>
     <ul class="list navigation-menu">
-      <li class="link"><a href="" id="nav-home-header" class="nav-link" style="color: var(--Text-Primary);"></a></li>
-      <li class="link"><a href="./features.html" id="nav-features-header" class="nav-link"></a></li>
-      <li class="link"><a href="./company.html" id="nav-company-header" class="nav-link"></a></li>
+      <li class="link">
+        <a
+          href=""
+          id="nav-home-header"
+          class="nav-link"
+          style="color: var(--Text-Primary)"
+        ></a>
+      </li>
+      <li class="link">
+        <a href="./features.html" id="nav-features-header" class="nav-link"></a>
+      </li>
+      <li class="link">
+        <a href="./company.html" id="nav-company-header" class="nav-link"></a>
+      </li>
     </ul>
   </nav>
   <div class="header-tablet-part">
-    <button class="header-tablet-btn" id="get-started" onclick="scrollToSection()"></button>
+    <button
+      class="header-tablet-btn"
+      id="get-started"
+      onclick="scrollToSection()"
+    ></button>
     <div class="social-net-tablet-list">
-      <img src="./img/header/social1@2x.png" alt="social icon" class="social-tablet-icon-header">
-      <img src="./img/header/social2@2x.png" alt="social icon" class="social-tablet-icon-header">
+      <img
+        src="./img/header/social1@2x.png"
+        alt="social icon"
+        class="social-tablet-icon-header1"
+      />
+      <img
+        src="./img/header/social2@2x.png"
+        alt="social icon"
+        class="social-tablet-icon-header2"
+      />
     </div>
   </div>
 </div>
 
 <script defer>
-  const burger = document.querySelector(".burger");
-  const mobileMenu = document.querySelector(".mobile-menu");
-  const close = document.querySelector(".close")
-  const headerTabletBtn = document.querySelector(".header-tablet-btn");
+  const burger = document.querySelector('.burger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const close = document.querySelector('.close');
+  const headerTabletBtn = document.querySelector('.header-tablet-btn');
 
-  headerTabletBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("closed")
+  headerTabletBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('closed');
   });
 
-  burger.addEventListener("click", () => {
-    mobileMenu.classList.toggle("closed")
+  burger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('closed');
   });
   close.addEventListener('click', () => {
-    mobileMenu.classList.toggle("closed")
-  })
+    mobileMenu.classList.toggle('closed');
+  });
   function scrollToSection() {
     const targetSection = document.querySelector('.form-home-section');
     targetSection.scrollIntoView({ behavior: 'smooth' });
   }
+
+  document
+    .querySelector('.selected-language')
+    .addEventListener('click', function () {
+      document.querySelector('.language-options').classList.toggle('show');
+      document.querySelector('.arrow').classList.toggle('rotate');
+    });
+
+  document.querySelectorAll('.flag').forEach(function (flag) {
+    flag.addEventListener('click', function () {
+      const selectedLang = this.getAttribute('data-lang');
+      document.querySelector('.selected-language').firstChild.textContent =
+        selectedLang;
+      document.querySelector('.language-options').classList.remove('show');
+      document.querySelector('.arrow').classList.remove('rotate');
+    });
+  });
 </script>
+
 <style>
-  .language-selector {
-    position: relative;
-    top: 3px;
-    border: none;
-    outline: none;
-    color: var(--Text-Main, #212121);
-    text-align: right;
-    font-family: Gilroy;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26.646px; /* 166.537% */
+  @media screen and (min-width: 375px) {
+
+    .language-switcher {
+      position: relative;
+      top: 4px;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .selected-language {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      color: var(--Text-Main, #212121);
+      text-align: right;
+      font-family: Gilroy;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26.646px;
+      position: relative;
+      z-index: 1000;
+    }
+
+    .arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .arrow.rotate {
+      transform: rotate(180deg);
+    }
+
+    .language-options {
+      display: none;
+      position: absolute;
+      top: 24px; /* height of selected-language + 8px */
+      left: 0;
+      width: 48px;
+      height: 139px;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 100000;
+    }
+
+    .flag {
+      width: 24px;
+      height: 16px;
+      margin: 8px auto;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .separator {
+      width: 24px;
+      height: 1px;
+      background: var(--Background-Main-for-light-mode, #f3f4f5);
+      margin: 8px auto;
+    }
+
+    .language-options.show {
+      display: block;
+    }
+    .language-switcher.a{
+      display: none;
+    }
   }
-  .language-selector > option{
-    color: var(--Text-Main, #212121);
-    text-align: right;
-    font-family: Gilroy;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26.646px; /* 166.537% */
-    border: none;
-    outline: none;
+
+
+  @media screen and (min-width: 1920px) {
+    .selected-language {
+      font-size: 18px;
+    }
   }
 </style>

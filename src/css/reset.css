@@ -69,6 +69,8 @@ body {
   font-family: 'Gilroy', sans-serif;
   font-weight: 400;
   font-style: normal;
+  scrollbar-width: none;
+  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;
@@ -95,8 +97,8 @@ body.lock {
     url('../img/chain-home/bg/img2.png'),
     url('../img/chain-home/bg/img3.png');
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: contain, contain, contain, contain;
-    background-position: 0 321px, 0 2850px, 0 3220px, 0 5922px;
+    background-size: contain, 390px, contain, contain;
+    background-position: 0 321px, -15px 2850px, 0px 3258px, 0 6000px;
   }
 }
 
@@ -112,7 +114,10 @@ body.lock {
     url("../img/form-home/img768.png");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: contain, contain, contain;
-    background-position: 0 325px, 0 3683px, 0 6071px;
+    background-position: 0 254px, 0 3460px, 0 5948px;
+  }
+  .img-hiw-picture{
+    height: 459px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -126,8 +131,8 @@ body.lock {
     url('../img/chain-home/bg/img1024.png'),
     url('../img/form-home/img1024.png');
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: contain, 768px 821px, contain, contain;
-    background-position: 0 0, 426px 1596px, 0 2490px, 0 4456px;
+    background-size: contain, 664px, contain, contain;
+    background-position: 0 0, 475px 1630px, 0 2510px, 0 4508px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -142,7 +147,7 @@ body.lock {
     url('../img/form-home/img1280.png');
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: contain, 768px 821px, contain, contain;
-    background-position: 0 0, 555px 1596px, 0 2458px,0 4303px;
+    background-position: 0 0, 580px 1596px, 0 2458px,0 4400px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -157,7 +162,7 @@ body.lock {
     url('../img/form-home/img1440.png');
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: contain,768px 821px, contain, contain;
-    background-position: 0 0, 693px 1596px, 0 2432px, 0 4290px;
+    background-position: 0 0, 734px 1560px, 0 2432px, 0 4376px;
   }
 }
 
@@ -173,7 +178,7 @@ body.lock {
     url('../img/form-home/img1920.png');
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: contain, 768px 821px, contain, contain;
-    background-position: 0 0, 964px 1596px, 0 2450px, 0 4290px;
+    background-position: 0 0, 964px 1596px, 0 2503px, 0 4501px;
   }
 }
 

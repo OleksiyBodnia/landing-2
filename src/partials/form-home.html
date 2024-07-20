@@ -9,34 +9,43 @@
           id="form-home-form-label-one"
           class="form-lbl"
         ></label>
-        <input
+        <div class="inputDiv">
+          <input
           type="text"
           class="form-home-input"
           id="name"
           placeholder="John Appleseed"
         />
+        <span class="error-message">Required field</span>
+        </div>
         <label
           for="bus-name"
           id="form-home-form-label-two"
           class="form-lbl"
         ></label>
-        <input
+        <div class="inputDiv">
+          <input
           type="text"
           class="form-home-input"
           id="bus-name"
           placeholder="Burgers &Boba (Singapore)"
         />
+        <span class="error-message">Required field</span>
+        </div>
+
         <label
           for="number"
           id="form-home-form-label-three"
           class="form-lbl"
         ></label>
-        <input
+        <div class="inputDiv"><input
           type="number"
           class="form-home-input"
           id="number"
           placeholder="65 9123 4567"
         />
+        <span class="error-message">Required field</span></div>
+
         <button type="submit" id="form-btn" class="form-btn"></button>
         <p class="form-home-promise" id="form-home-promise"></p>
       </form>
@@ -45,3 +54,54 @@
 </section>
 
 
+<script>
+document.querySelector('.form-home').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  let isValid = true;
+
+  const inputs = document.querySelectorAll('.form-home-input');
+  inputs.forEach(function(input) {
+    const errorMessage = input.nextElementSibling; // Get the next sibling span element
+    if (!input.value) {
+      isValid = false;
+      input.classList.add('error');
+      errorMessage.style.display = 'block';
+    } else {
+      input.classList.remove('error');
+      errorMessage.style.display = 'none';
+    }
+  });
+
+  if (isValid) {
+    // Form is valid, proceed with form submission
+    // You can remove the line below if you want to actually submit the form
+    alert('Form submitted successfully!');
+  }
+});
+
+</script>
+
+<style>
+  .inputDiv{
+    position: relative;
+    width: 100%;
+  }
+  .error-message{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+.error-message {
+  color: #FF474D;
+  font-size: 12px;
+  display: none;
+  text-align: right;
+}
+
+.form-home-input.error {
+  border: 1px solid #FF474D;
+}
+
+</style>

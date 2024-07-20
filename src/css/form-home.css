@@ -105,8 +105,8 @@
     transition: background 0.3s ease-in-out;
   }
   .form-btn:hover,
-  .form-btn:focus{
-    background: rgba(255, 71, 77, 0.80);
+  .form-btn:focus {
+    background: rgba(255, 71, 77, 0.8);
   }
   .form-home-promise {
     color: var(--Text-Placeholder, #bdbdbd);
@@ -126,22 +126,23 @@
   .form-home-title {
     font-size: 32px;
     width: 477px;
+    margin-bottom: 32px;
   }
   .form-home-form-div {
     width: 489px;
     padding: 32px;
   }
-  .form-home{
+  .form-home {
     padding: 48px 48px 40px 48px;
   }
-  .form-btn{
+  .form-btn {
     margin-top: 16px;
     margin-left: 75px;
   }
-  .form-home-promise{
+  .form-home-promise {
     margin-left: 96px;
   }
-  .form-home-form-title{
+  .form-home-form-title {
     font-size: 24px;
   }
 }
@@ -150,18 +151,26 @@
     padding-bottom: 139px;
   }
   .form-home-title {
-    font-size: 36px;
-    width: 512px;
+    font-size: 32px;
+    width: 440px;
     text-align: start;
   }
-  .form-home-div{
+  .form-home-div {
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
   }
+  .form-home-form-title {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 1280px) {
   .form-home-div {
+  }
+  .form-home-title {
+    font-size: 36px;
+    width: 477px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -175,5 +184,35 @@
   .form-home-title {
     font-size: 44px;
     width: 590px;
+  }
+
+  .form-home-form-div {
+    width: 504px;
+  }
+  .form-home-form-title {
+    font-size: 28px;
+  }
+  .form-home {
+    padding: 48px;
+  }
+  .form-lbl {
+    font-size: 14px;
+  }
+  .form-home-input {
+    font-size: 16px;
+    height: 48px;
+    border-radius: 8px;
+  }
+  .form-btn {
+    width: 210px;
+    height: 56px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    border-radius: 18.667px;
+    margin-bottom: 12px;
+  }
+  .form-home-promise{
+    font-size: 16px;
   }
 }

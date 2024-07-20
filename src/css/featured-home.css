@@ -16,6 +16,22 @@
     text-align: center;
     margin-bottom: 57px;
   }
+  .feat-home-img1 {
+    width: 189px;
+    height: 28px;
+  }
+  .feat-home-img2 {
+    width: 203px;
+    height: 40px;
+  }
+  .feat-home-img3 {
+    width: 153px;
+    height: 22px;
+  }
+  .feat-home-img4 {
+    width: 169px;
+    height: 20px;
+  }
   .feat-home-title::after {
     content: ' ';
     background: #d2d2d2;
@@ -24,7 +40,7 @@
     flex-shrink: 0;
     position: absolute;
     bottom: -24px;
-    left: 63px;
+    left: 46px;
   }
   .feat-home-img-list {
     display: flex;
@@ -56,7 +72,7 @@
   .feat-home-img-list {
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 180px;
+    column-gap: 100px;
     row-gap: 60px;
     align-items: center;
     justify-content: center;
@@ -86,8 +102,13 @@
   .feat-home-div {
     padding-bottom: 317px;
   }
+  .feat-home-title {
+    margin-bottom: 49px;
+    font-size: 36px;
+  }
   .feat-home-title::after {
     left: 186px;
+    bottom: -16px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -96,6 +117,10 @@
   }
   .feat-home-title::after {
     left: 264px;
+  }
+  .feat-home-img-list {
+    gap: 106px;
+    justify-content: center;
   }
 }
 
@@ -111,5 +136,28 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+  }
+  .feat-home-img-list {
+    gap: 94px;
+    justify-content: center;
+  }
+  .feat-home-title {
+    margin-bottom: 50px;
+  }
+  .feat-home-img1 {
+    width: 222.748px;
+    height: 33px;
+  }
+  .feat-home-img2 {
+    width: 228.375px;
+    height: 45px;
+  }
+  .feat-home-img3 {
+    width: 187.774px;
+    height: 26.998px;
+  }
+  .feat-home-img4 {
+    width: 211.25px;
+    height: 25px;
   }
 }
