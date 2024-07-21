@@ -67,6 +67,7 @@
 @media screen and (min-width: 768px) {
   .hiw-div {
     padding-bottom: 250px;
+    background-image: none;
   }
   .hiw-title {
     font-size: 32px;

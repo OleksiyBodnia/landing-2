@@ -7,10 +7,10 @@
     gap: 32px;
     padding-bottom: 148px;
     padding-top: 60px;
-    background-image: url(/img/smarter/rect.png);
+    /* background-image: url(/img/smarter/rect.png);
     background-position: 0 -404px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
   }
   .chain-home-title {
     color: var(--Text-Main);
