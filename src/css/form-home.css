@@ -214,5 +214,15 @@
   }
   .form-home-promise{
     font-size: 16px;
+    height: 19px;
+  }
+  .form-home-form-title{
+    line-height: 35px;
+  }
+  .form-lbl{
+    line-height: 17px;
+  }
+  .form-home-input {
+    line-height: 19px;
   }
 }

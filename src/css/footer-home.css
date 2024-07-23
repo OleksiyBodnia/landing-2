@@ -151,4 +151,9 @@
   .footer-img-div{
     margin-left: 461px;
   }
+  .footer-div{
+    padding-bottom: 16px;
+    row-gap: 35px;
+  }
+
 }

@@ -320,16 +320,18 @@
   }
   .swiper-home-title {
     margin-bottom: 42px;
+    height: 54px;
   }
   swiper-container {
     width: 1132px;
-    height: 420px;
+    height: 426px;
   }
 
   swiper-slide {
     height: 377px;
     padding: 56px 326px 145px 56px;
   }
+
   .swiper-home-title {
     font-size: 44px;
   }
@@ -371,5 +373,9 @@
   }
   .swiper-text.d {
     width: 750px;
+  }
+
+  #swiper-wrapper{
+    height: 426px;
   }
 }

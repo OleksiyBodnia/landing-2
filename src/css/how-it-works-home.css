@@ -168,6 +168,7 @@
   }
   .desk-hiw-div {
     width: 574px;
+    height: 230px;
   }
   .hiw-title {
     font-size: 44px;
@@ -200,6 +201,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
+    margin-bottom: 0;
   }
   .paly-btn-text{
     font-size: 18px;

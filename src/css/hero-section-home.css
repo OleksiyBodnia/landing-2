@@ -165,10 +165,10 @@
   .hero-home-div {
     padding-top: 190px;
     padding-bottom: 355px;
-    background-image: url('../img/hero-home/bg-image/starts@2x.png');
+    background-image: url('../img/hero-home/bg-image/shit.png');
     background-repeat: no-repeat;
-    background-size: 78px 62px;
-    background-position: 275px 161px;
+    background-size: 87px 80px;
+    background-position: 254px 155px;
   }
   .hero-home-div-title {
     font-size: 48px;
@@ -194,5 +194,9 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+  }
+  .sml-txt{
+    width: 124px;
+    height: 19px;
   }
 }
