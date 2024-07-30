@@ -1,3 +1,15 @@
+const main = document.querySelector('.main');
+
+function showMain() {
+  main.classList.remove('hidden');
+}
+
+function hideMain() {
+  main.classList.add('hidden');
+}
+
+hideMain();
+
 fetch('https://serverjson-g1d6.onrender.com/locales/en.json')
   .then(res => res.json())
   .then(enTranslations => {
@@ -15,6 +27,7 @@ fetch('https://serverjson-g1d6.onrender.com/locales/en.json')
       },
       function (err, t) {
         updateContent();
+        showMain();
 
         if (savedLanguage !== 'en') {
           fetch(`${savedLanguage}.json`)
@@ -25,7 +38,10 @@ fetch('https://serverjson-g1d6.onrender.com/locales/en.json')
                 'translation',
                 translations
               );
-              i18next.changeLanguage(savedLanguage, updateContent);
+              i18next.changeLanguage(savedLanguage, () => {
+                updateContent();
+                showMain();
+              });
             });
         }
       }
@@ -33,6 +49,7 @@ fetch('https://serverjson-g1d6.onrender.com/locales/en.json')
   });
 
 function changeLanguage(lng) {
+  hideMain();
   fetch(`https://serverjson-g1d6.onrender.com/locales/${lng}.json`)
     .then(res => res.json())
     .then(translations => {
@@ -40,6 +57,7 @@ function changeLanguage(lng) {
       i18next.changeLanguage(lng, function (err, t) {
         localStorage.setItem('language', lng);
         updateContent();
+        showMain();
       });
     });
 }
